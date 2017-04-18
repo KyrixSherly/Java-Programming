@@ -7,7 +7,7 @@ public class PizzaTestDrive {
   PizzaStore store = new PizzaStore(new SimplePizzaFactory());
 
   Pizza pizza = store.orderPizza("cheese");
-  
   pizza = store.orderPizza("pepparoni");
+  pizza = store.orderPizza("potato");
  }
 }
