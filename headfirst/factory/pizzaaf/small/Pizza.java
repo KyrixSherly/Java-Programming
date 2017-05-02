@@ -4,6 +4,7 @@ public abstract class Pizza {
     String name;
     Dough dough;
     Cheese cheese;
+    Potato potato;
 
     protected abstract void prepare();
     void bake() {
@@ -30,6 +31,10 @@ public abstract class Pizza {
         }
         if (cheese != null) {
             result.append(cheese);
+            result.append("\n");
+        }
+        if (potato != null) {
+            result.append(potato);
             result.append("\n");
         }
         return result.toString();

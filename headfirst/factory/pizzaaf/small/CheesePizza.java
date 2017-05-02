@@ -10,5 +10,6 @@ public class CheesePizza extends Pizza{
     System.out.println("Preparing " + name);
     dough = inFac.createDough();
     cheese = inFac.createCheese();
+    potato = inFac.createPotato();
   }
 }
