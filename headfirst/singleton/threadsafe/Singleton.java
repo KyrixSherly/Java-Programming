@@ -8,7 +8,7 @@ public class Singleton{
   
   }
   
-  public static Singleton getInstance() {
+  public static synchronized Singleton getInstance() {
     if(uniqueInstance == null) {
         System.out.println("creating...");
         uniqueInstance = new Singleton();
